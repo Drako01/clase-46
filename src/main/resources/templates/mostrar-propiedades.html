@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mostrar Propiedades</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Configuración</h2>
+    <table>
+        <tr>
+            <th>Nombre 1</th>
+            <td th:text="${nombre1}"></td>
+        </tr>
+        <tr>
+            <th>Nombre 2</th>
+            <td th:text="${nombre2}"></td>
+        </tr>
+        <tr>
+            <th>Propiedad 1</th>
+            <td th:text="${propiedad1}"></td>
+        </tr>
+        <tr>
+            <th>Propiedad 2</th>
+            <td th:text="${propiedad2}"></td>
+        </tr>
+    </table>
+</body>
+</html>

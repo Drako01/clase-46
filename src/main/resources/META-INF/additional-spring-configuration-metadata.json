@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "config1.nombre1",
+    "type": "java.lang.String",
+    "description": "A description for 'config1.nombre1'"
+  },
+  {
+    "name": "config1.nombre2",
+    "type": "java.lang.String",
+    "description": "A description for 'config1.nombre2'"
+  },
+  {
+    "name": "clave.propiedad1",
+    "type": "java.lang.String",
+    "description": "A description for 'clave.propiedad1'"
+  }
+]}

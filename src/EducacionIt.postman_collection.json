@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "5d08ef86-9256-4321-b74b-1b4cab91ed30",
+		"name": "EducacionIt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1690410"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los alumnos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/alumnos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alumnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener un alumno por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/alumnos/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alumnos",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar un nuevo alumno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"legajo\": 123,\r\n    \"nombre\": \"Nombre del alumno\",\r\n    \"edad\": 20\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/alumnos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alumnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un alumno existente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"legajo\": 123,\r\n    \"nombre\": \"Nuevo nombre del alumno\",\r\n    \"edad\": 21\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/alumnos/{legajo}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alumnos",
+						"{legajo}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un alumno",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/alumnos/{legajo}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"alumnos",
+						"{legajo}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
